@@ -2,108 +2,280 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>FormPilot+ 隐私政策</title>
+  <title>FormPilot+ Privacy Policy / 隐私政策</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://jsalan1982.github.io/formpilot-privacy/">
   <style>
     body {
-      font-family: Arial, "Microsoft YaHei", sans-serif;
+      font-family: Arial, "Microsoft YaHei", "Segoe UI", sans-serif;
       max-width: 860px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 0 20px 60px;
       line-height: 1.8;
       color: #222;
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #1f2937;
     }
-    .date {
-      color: #666;
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    h2 { font-size: 20px; margin-top: 32px; }
+    h3 { font-size: 17px; margin-top: 40px; padding-top: 24px; border-top: 2px solid #e5e7eb; }
+    .date { color: #666; font-size: 14px; margin-bottom: 24px; }
+    ul { padding-left: 1.4em; }
+    li { margin: 6px 0; }
+    .lang-note {
+      background: #f3f4f6;
+      border-radius: 8px;
+      padding: 12px 16px;
       font-size: 14px;
+      color: #4b5563;
     }
+    a { color: #2563eb; }
   </style>
 </head>
 <body>
-  <h1>FormPilot+ 智能表单助手 隐私政策</h1>
+
+  <!-- ========== 中文 ========== -->
+  <h1>FormPilot+ 表单记忆助手 隐私政策</h1>
   <p class="date">最后更新日期：2026年7月30日</p>
+
+  <p class="lang-note">English version is provided below. / 英文版本见下文。</p>
 
   <h2>一、产品说明</h2>
   <p>
-    FormPilot+ 智能表单助手是一款网页表单记忆与自动填充工具，
-    用于帮助用户保存、管理和恢复网页表单中的自定义填写内容。
+    FormPilot+ 表单记忆助手（以下简称「本扩展」）是一款 Chrome 浏览器扩展，
+    用于帮助用户在本地保存、编辑和管理网页表单填写内容，并在用户主动操作时回填到表单中。
+    本扩展提供多配置、多页面管理，并支持普通网页、iframe、嵌套 iframe 及 open Shadow DOM 等结构。
+    本扩展还提供内置演示页面，供安装后快速体验功能。
   </p>
 
-  <h2>二、我们收集的数据</h2>
+  <h2>二、我们收集哪些数据</h2>
   <p>
-    本扩展不会主动收集用户的个人信息、浏览历史、账号密码或网页内容。
+    本扩展<strong>不会</strong>在后台自动采集您的浏览历史、账号体系信息或与填表无关的网页内容，
+    也<strong>不会</strong>将数据上传到开发者服务器。
   </p>
   <p>
-    当用户主动使用“保存表单”“保存到当前页面”“手动添加字段”等功能时，
-    扩展会保存用户主动填写或配置的表单字段内容、字段标识、页面配置和插件设置。
-  </p>
-
-  <h2>三、数据的使用方式</h2>
-  <p>
-    保存的数据仅用于实现以下功能：
+    仅当您在扩展中<strong>主动</strong>执行以下操作时，相关数据才会被写入浏览器本地存储（<code>chrome.storage.local</code>）：
   </p>
   <ul>
-    <li>保存用户创建的表单模板；</li>
-    <li>在用户主动操作时恢复网页表单内容；</li>
-    <li>为输入框提供快捷填充候选项；</li>
-    <li>管理插件配置、页面配置和字段规则。</li>
+    <li>点击「保存到当前页面」或类似保存操作；</li>
+    <li>在配置管理页手工添加、编辑或删除字段；</li>
+    <li>导入您选择的 JSON 配置文件；</li>
+    <li>切换界面语言、当前配置或当前页面。</li>
   </ul>
-
-  <h2>四、数据存储位置</h2>
   <p>
-    FormPilot+ 默认将数据保存在用户本地浏览器存储中。
-    数据不会上传到开发者服务器，也不会出售、出租或分享给第三方。
+    上述本地保存的数据可能包括：配置名称、页面名称、字段标签、字段标识、字段内容，
+    以及您在该网页表单中填写过的文本、选项或勾选状态。
+    若您在表单中填写了姓名、电话、邮箱、地址等信息，或保存了含密码框在内的字段，
+    这些内容也可能随您的保存操作一并保存在本地。
+  </p>
+  <p>
+    本扩展不会主动读取剪贴板、不会记录鼠标轨迹或键盘输入日志，也不会建立用户画像。
   </p>
 
-  <h2>五、数据共享</h2>
+  <h2>三、数据如何使用</h2>
+  <p>本地保存的数据仅用于实现本扩展的核心功能，包括：</p>
+  <ul>
+    <li>保存与编辑您创建的表单配置；</li>
+    <li>在您点击「载入当前页面」或输入框旁图标菜单时，回填对应字段；</li>
+    <li>在配置页展示、导出、导入您的配置；</li>
+    <li>记住界面语言与当前选中的配置/页面。</li>
+  </ul>
   <p>
-    我们不会将用户数据出售、出租、转让或分享给任何第三方。
+    我们不会将上述数据用于广告、信用评估、用户行为分析，或与填表记忆无关的其他目的。
+  </p>
+
+  <h2>四、数据存储与保留</h2>
+  <p>
+    数据默认保存在您设备上的 Chrome 本地存储中，由您的浏览器管理。
+    数据保留时间取决于您是否继续保留相应配置，或是否卸载扩展、清除扩展数据。
+  </p>
+
+  <h2>五、数据共享与出售</h2>
+  <p>
+    我们不会出售、出租、交易或以其他方式向第三方共享您的数据。
+    导入/导出功能由您在本地自行完成；若您将导出的文件发送给他人，由您自行负责。
   </p>
 
   <h2>六、权限说明</h2>
-  <p>
-    FormPilot+ 可能需要以下浏览器权限：
-  </p>
+  <p>为实现上述功能，本扩展可能申请以下权限：</p>
   <ul>
     <li>
       <strong>storage：</strong>
-      用于在本地保存用户创建的表单配置、模板数据和插件设置。
-    </li>
-    <li>
-      <strong>host permissions / all_urls：</strong>
-      用于在用户访问的网页中识别表单输入框，并提供保存、匹配和自动填充功能。
+      在本地保存配置、页面、字段内容、语言偏好及当前选中项。
     </li>
     <li>
       <strong>tabs：</strong>
-      用于在用户主动操作时获取当前标签页信息，例如保存当前页面或打开测试页面。
+      识别当前活动标签页，向该页发送保存/载入指令，并打开配置页或内置演示页。
     </li>
     <li>
       <strong>webNavigation：</strong>
-      用于监听页面加载状态，以支持 iframe 等复杂网页结构下的表单识别。
+      获取当前标签页中的 iframe 列表，以便在多层框架页面中保存或回填表单字段。
+      本权限不用于记录您的浏览历史。
+    </li>
+    <li>
+      <strong>网页访问（content_scripts，含 http / https / file）：</strong>
+      在您访问的网页中识别可填写的表单控件，显示输入框旁图标，并在您主动保存或载入时读写相应字段。
+      若您需要在本地 HTML 文件（file://）上使用，需在扩展详情中开启「允许访问文件网址」。
     </li>
   </ul>
 
   <h2>七、远程代码</h2>
   <p>
-    FormPilot+ 不使用远程代码。
-    所有 JavaScript 代码均包含在扩展程序包内。
+    本扩展<strong>不使用远程代码</strong>。
+    所有 JavaScript 均打包在扩展程序内，不从外部服务器加载或执行脚本。
   </p>
 
-  <h2>八、用户控制</h2>
+  <h2>八、您的控制权</h2>
+  <p>您可以随时：</p>
+  <ul>
+    <li>在「管理配置」页面查看、修改、删除配置、页面或字段；</li>
+    <li>导出或导入本地配置；</li>
+    <li>在 Chrome 扩展管理页清除本扩展数据；</li>
+    <li>卸载本扩展以删除本地保存的数据。</li>
+  </ul>
+
+  <h2>九、儿童隐私</h2>
+  <p>本扩展并非面向 13 岁以下儿童设计，也不会故意收集儿童个人信息。</p>
+
+  <h2>十、政策更新</h2>
   <p>
-    用户可以在扩展的配置管理页面中查看、修改、导出、导入或删除自己保存的配置数据。
-    用户也可以通过卸载扩展来移除本地保存的数据。
+    我们可能不时更新本隐私政策。更新后会在本页面修改「最后更新日期」。
+    若变更重大，我们会在扩展或商店说明中另行提示。
   </p>
 
-  <h2>九、联系我们</h2>
+  <h2>十一、联系我们</h2>
   <p>
     如对本隐私政策或 FormPilot+ 有任何问题，请通过以下方式联系：
   </p>
   <p>
-    邮箱：your-email@example.com
+    邮箱：<a href="mailto:171681@gmail.com">171681@gmail.com</a>
   </p>
+
+
+  <!-- ========== English ========== -->
+  <h3>FormPilot+ Form Assistant — Privacy Policy</h3>
+  <p class="date">Last updated: July 30, 2026</p>
+
+  <h2>1. About the product</h2>
+  <p>
+    FormPilot+ Form Assistant (the “Extension”) is a Chrome extension that helps you
+    save, edit, and manage form field values locally, and fill them back into web forms
+    when you explicitly request it. It supports multiple profiles and pages, and works
+    on normal pages, iframes, nested iframes, and open Shadow DOM. A built-in demo page
+    is included for quick onboarding.
+  </p>
+
+  <h2>2. What data we collect</h2>
+  <p>
+    The Extension does <strong>not</strong> automatically collect your browsing history,
+    account credentials, or unrelated page content in the background, and does
+    <strong>not</strong> upload data to the developer’s servers.
+  </p>
+  <p>
+    Data is written to local browser storage (<code>chrome.storage.local</code>) only when
+    you <strong>actively</strong> perform actions such as:
+  </p>
+  <ul>
+    <li>Clicking “Save to current page” or similar save actions;</li>
+    <li>Manually adding, editing, or deleting fields in the settings page;</li>
+    <li>Importing a JSON configuration file you choose;</li>
+    <li>Switching UI language or the active profile/page.</li>
+  </ul>
+  <p>
+    Locally stored data may include profile names, page names, field labels, field keys,
+    field values, and text/selection/checkbox states from forms you saved.
+    If you save forms containing names, phone numbers, emails, addresses, or password
+    fields, those values may also be stored locally as part of your saved configuration.
+  </p>
+  <p>
+    We do not read your clipboard, log keystrokes or mouse activity, or build user profiles.
+  </p>
+
+  <h2>3. How data is used</h2>
+  <p>Locally stored data is used only to provide core Extension features, including:</p>
+  <ul>
+    <li>Saving and editing your form configurations;</li>
+    <li>Filling fields when you click “Load current page” or use the per-field icon menu;</li>
+    <li>Displaying, exporting, and importing your configurations;</li>
+    <li>Remembering UI language and the active profile/page.</li>
+  </ul>
+  <p>
+    We do not use this data for advertising, credit decisions, behavioral analytics,
+    or purposes unrelated to form memory and refill.
+  </p>
+
+  <h2>4. Storage and retention</h2>
+  <p>
+    Data is stored locally on your device via Chrome storage APIs and retained until you
+    delete configurations, clear Extension data, or uninstall the Extension.
+  </p>
+
+  <h2>5. Sharing and sale of data</h2>
+  <p>
+    We do not sell, rent, trade, or share your data with third parties.
+    Import/export is performed locally by you; if you share an exported file with others,
+    you are responsible for that sharing.
+  </p>
+
+  <h2>6. Permissions</h2>
+  <p>The Extension may request the following permissions:</p>
+  <ul>
+    <li>
+      <strong>storage:</strong>
+      Save profiles, pages, field values, language preference, and active selections locally.
+    </li>
+    <li>
+      <strong>tabs:</strong>
+      Identify the active tab, send save/load commands, and open the settings or demo page.
+    </li>
+    <li>
+      <strong>webNavigation:</strong>
+      List iframes in the active tab so save/load can work across nested frames.
+      This is not used to record browsing history.
+    </li>
+    <li>
+      <strong>Website access (content_scripts on http / https / file):</strong>
+      Detect fillable form controls, show icons beside inputs, and read/write field values
+      when you explicitly save or load. For local HTML files (file://), enable
+      “Allow access to file URLs” in the Extension details page.
+    </li>
+  </ul>
+
+  <h2>7. Remote code</h2>
+  <p>
+    The Extension does <strong>not</strong> use remote code.
+    All JavaScript is bundled inside the Extension package.
+  </p>
+
+  <h2>8. Your controls</h2>
+  <p>You can at any time:</p>
+  <ul>
+    <li>View, edit, or delete profiles, pages, and fields in Manage settings;</li>
+    <li>Export or import local configurations;</li>
+    <li>Clear Extension data in Chrome’s extension management page;</li>
+    <li>Uninstall the Extension to remove locally stored data.</li>
+  </ul>
+
+  <h2>9. Children’s privacy</h2>
+  <p>
+    The Extension is not directed to children under 13, and we do not knowingly collect
+    children’s personal information.
+  </p>
+
+  <h2>10. Policy updates</h2>
+  <p>
+    We may update this Privacy Policy from time to time. The “Last updated” date on this
+    page will be revised accordingly. Material changes may also be noted in the store listing.
+  </p>
+
+  <h2>11. Contact us</h2>
+  <p>
+    If you have questions about this Privacy Policy or FormPilot+, contact us at:
+  </p>
+  <p>
+    Email: <a href="mailto:171681@gmail.com">171681@gmail.com</a>
+  </p>
+
 </body>
 </html>
